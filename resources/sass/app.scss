@@ -1,0 +1,25 @@
+@import "global/reset";
+@import "global/variables";
+@import "global/global";
+
+@import "global/header";
+@import "global/footer";
+@import "global/mixin";
+@import "global/layout";
+
+@import "sections/home";
+@import "sections/sections";
+@import "sections/services";
+@import "sections/contact";
+@import "sections/about";
+@import "sections/case-study";
+@import "sections/work";
+
+
+@import "components/morph";
+@import "components/buttons";
+@import "components/work-card";
+@import "components/contact-form";
+@import "components/map";
+@import "components/client-colours";
+@import "components/video";

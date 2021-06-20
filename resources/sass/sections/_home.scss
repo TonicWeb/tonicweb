@@ -1,0 +1,153 @@
+
+.home-section-1, 
+.home-section-2, 
+.home-section-3 {
+    position: relative;
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+.home-section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.header-left, 
+.header-right {
+    position: absolute;
+    margin: 0;
+    width: 50%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+}
+.header-left {
+    left: 0px;
+    h3 {
+        position: absolute;
+        text-align: left;
+        left: 28%;
+        color: #fff;
+    }
+}
+.header-right {
+    right: 0;
+    h3 {
+        position: absolute;
+        text-align: right;
+        right: 28%;
+        color: #fff;
+    }
+}
+#home-header {
+    width: 900px;
+}
+.home-section-2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .container {height: 560px;}
+  
+    h1 {
+      position: absolute;
+      margin: 0;
+      width: 50%;
+      top: 0;
+      right: 0;
+      line-height: 1.16em;
+      span {color: $colorWhite;}
+    }
+  
+    p {position: absolute; top: 350px; width: 40%;}
+  
+    img {position: absolute; top: 28px;}
+  
+    @media (max-width: 1340px) {
+      h1 {width: 500px;}
+      p {top: 390px; width: 535px;}
+      .container {height: 530px;}
+      img {top: 20px; width: 140px;}
+    }
+  
+    @media (max-width: 1050px) {
+      h1 {width: 400px;}
+      p {top: 340px;}
+    }
+  
+    @media (max-width: 820px) {
+      h1 {width: 400px;}
+      p {top: 360px; width: 440px;}
+      img {top: 16px; width: 110px;}
+    }
+  }
+
+  .home-section-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+  
+    .container {
+      height: auto;
+      margin: 150px 0 160px 0;
+    }
+  
+    h2 {
+      //position: absolute;
+      width: 330px;
+      margin-bottom: 60px;
+      color: $color1;
+      span {
+        color: $colorWhite;
+      }
+    }
+  }
+.color-purple {
+    .home-section-3 {
+        h2 {
+            span {
+                color: #31006F;
+            }
+        }
+    }
+}
+.color-pink {
+    .home-section-3 {
+        h2 {
+            span {
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+
+  // Rotating Text
+.audience-title {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    top: 340px;
+    right: 0;
+    height: 140px;
+    overflow: hidden;
+    text-align: left;
+  
+    @media (max-width: 1340px) {
+      width: 500px;
+      top: 280px;
+      height: 140px;
+    }
+    @media (max-width: 1050px) {width: 400px; top: 240px;}
+    @media (max-width: 820px) {width: 400px;
+    }
+  }
+
+.home-about-icon {
+    position: relative;
+    width: 160px;
+}

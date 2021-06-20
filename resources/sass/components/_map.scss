@@ -1,0 +1,43 @@
+/* Set the size of the div element that contains the map */
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+
+.section-map {
+  min-height: auto;
+  height: 800px;
+  @media (max-width: 1240px) {height: 600px;}
+  @media (max-width: 960px) {height: 650px;}
+  @media (max-width: 480px) {height: 400px;}
+}
+
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  width: 100%;
+  height: 800px;
+  @media (max-width: 1240px) {height: 600px;}
+  @media (max-width: 960px) {height: 650px;}
+  @media (max-width: 480px) {height: 400px;}
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  height: 800px;
+  @media (max-width: 1240px) {height: 600px;}
+  @media (max-width: 960px) {height: 650px;}
+  @media (max-width: 480px) {height: 400px;}
+
+  iframe {
+    width: 100%;
+    height: 800px;
+    @media (max-width: 1240px) {height: 600px;}
+    @media (max-width: 960px) {height: 650px;}
+    @media (max-width: 480px) {height: 400px;}
+  }
+}

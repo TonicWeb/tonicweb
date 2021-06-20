@@ -1,0 +1,136 @@
+.container-grid {
+    position: relative;
+    max-width: 1540px;
+    margin: 0 120px 0 120px;
+    @media (max-width: 800px) {}
+    @media (max-width: 680px) {}
+    @media (max-width: 480px) {
+      margin: 0 30px 0 30px;
+    }
+    width: 1540px; 
+    
+    .services-overview-grid {
+        width: 100%;
+        clear: both;
+        .services-overview-titles {
+            width: 50%;
+            float: left;
+            display: block;
+        }
+        h5 {
+            margin-bottom: 4px;
+        }
+    }
+}
+.services-header {
+  @media (max-width: 800px) {}
+  @media (max-width: 680px) {}
+  @media (max-width: 480px) {
+    
+  }  
+}
+.services-grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  @media (max-width: 800px) {}
+  @media (max-width: 680px) {}
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
+  .services-grid-item {
+    width: 31.334%;
+    @media (max-width: 800px) {}
+    @media (max-width: 680px) {}
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    @media (max-width: 800px) {}
+    @media (max-width: 680px) {}
+    @media (max-width: 480px) {
+      margin-top: 10px;
+      height: 45px;
+    }  
+    border-bottom: 1px solid #31006F;
+    margin: 0 0 4%;
+    h6 {
+      color: #31006F;
+      font-size: 1.438em;
+      font-weight: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      padding: 0;
+      margin: 0;
+      @media (max-width: 800px) {}
+      @media (max-width: 680px) {}
+      @media (max-width: 480px) {
+        font-size: 1.238em;
+      }
+    }
+  }
+}
+.services-selector {
+  height: 230px;
+  margin-top: 50px;
+}
+.selector-left {
+  background-color: yellow;
+}
+.services-selector-card {
+  display: flex;
+  background-color: green;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.services-overview-text {
+    margin-top: 60px;
+    h4 {
+      margin-bottom: 40px;
+    }
+    p {width: 90%; margin-bottom: 60px;}
+  }
+  
+  .services-overview-links {
+    display: flex;
+  }
+  
+  .services-title {
+    margin-bottom: 40px;
+    @media (max-width: 1240px) {margin-bottom: 12px;}
+    @media (max-width: 480px) {margin-bottom: 0px;}
+    &.active {
+        h5 {
+            color: $color1;
+        }
+    }
+  }
+  
+  .services-title-last {
+    margin-bottom: 180px;
+    &.active {
+        h5 {
+            color: $color1;
+        }
+    }
+  }
+  
+  .active {
+    h1 {color: $colorWhite;}
+    .service-number {
+      color: $color1 !important;
+    }
+  }
+  
+  .text-hidden {
+    display: none;
+  }
+  
+  .creative-text-active, .technology-text-active {
+    display: block;
+  }

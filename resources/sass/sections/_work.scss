@@ -1,0 +1,92 @@
+.work {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 190px;
+    margin-bottom: 190px;
+    @media (max-width: 800px) {}
+    @media (max-width: 680px) {}
+    @media (max-width: 480px) {
+        margin-top: 80px;
+        margin-bottom: 190px;
+    }
+    .grid-container {
+        margin: 0 auto;
+        h2 {
+            margin: 0 3.5% 50px;
+            span {
+                color: #fff;
+            }
+        }
+        .work-grid {
+            max-width: 1540px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            .grid-card {
+                width: 100%;
+                position: relative;
+                transition: -webkit-transform .4s ease-in-out;
+                transition: transform .4s ease-in-out;
+                transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+                -webkit-perspective: 1000px;
+                perspective: 1000px;
+                -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+                cursor: url("/img/common/cursor-icon.svg"),auto;
+                max-width: 26.5%;
+                &.card1 {
+                    margin-top: 60px;
+                }
+                &.card2 {
+                    margin-top: 150px;
+                }
+            }
+        }
+    }
+    @media (max-width: 800px) {}
+    @media (max-width: 680px) {}
+    @media (max-width: 480px) {
+        flex-direction: column;
+        margin-top: 100px;
+        .grid-container {
+            margin: 0 auto;
+            h2 {
+                margin: 0 3.5% 0px 35px;
+                span {
+                    color: #fff;
+                }
+            }
+            .work-grid {
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                .grid-card {
+                    width: 100%;
+                    position: relative;
+                    transition: -webkit-transform .4s ease-in-out;
+                    transition: transform .4s ease-in-out;
+                    transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+                    -webkit-perspective: 1000px;
+                    perspective: 1000px;
+                    -webkit-transform-style: preserve-3d;
+                    transform-style: preserve-3d;
+                    cursor: url("/img/common/cursor-icon.svg"),auto;
+                    max-width: 75%;
+                    &.card1 {
+                        margin: 10px 0 0 35px;
+                    }
+                    &.card2 {
+                        margin: 40px 0 0 35px;
+                    }
+                    &.card3 {
+                        margin: 40px 0 0 35px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,70 @@
+header {
+    position: fixed;
+    display: flex;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    padding: 40px 50px 30px 40px;
+    
+    @media (max-width: 960px) { padding: 40px 50px 30px 40px; }
+    @media (max-width: 480px) { padding: 15px 40px 30px 15px; }
+    
+    width: 100%;
+}
+
+.sub-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #31006f;
+    color: #F0F0F0;
+    height: 100vh;
+    width: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    z-index: 9;
+    &.__active {
+        width: 100%;
+    }
+    .menu-inner {
+        padding: 26vh 25.5vh;
+        nav {
+            ul {
+                list-style: none;
+                li {
+                    float: none;
+                    
+                    a {
+                        font-family: 'Mark Pro Black';
+                        color: $pink;
+                        text-decoration: none;
+                        text-transform: capitalize;
+                        font-size: 95px;
+                        line-height: 114px;
+                    }
+                }
+            }
+        }
+        @media (max-width: 480px) { 
+            padding: 26vh 14.5vh;
+            nav {
+                ul {
+                    list-style: none;
+                    li {
+                        float: none;
+                        
+                        a {
+                            font-family: 'Mark Pro Black';
+                            color: $pink;
+                            text-decoration: none;
+                            text-transform: capitalize;
+                            font-size: 40px;
+                            line-height: 70px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

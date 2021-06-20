@@ -1,0 +1,27 @@
+.about-icon {
+  width: 50%;
+  @media (max-width: 960px) {width: 70%;}
+  @media (max-width: 480px) {width: 75%;}
+}
+
+@media (max-width: 960px) {
+  .text-left-about {
+    width: 100%;
+    margin-top: 40px;
+    padding-right: 60px;
+  }
+  .section-headline {font-size: 3.375em;}
+  .about-title3 {margin-top: -25px;}
+  .about-icon2 {margin-top: -790px;}
+}
+
+@media (max-width: 480px) {
+  .text-left-about {margin-top: 40px;}
+  .section-headline {font-size: 1.875em;}
+  .text-left-about-header {margin-top: 260px;}
+}
+
+.section-about {
+  min-height: 100vh;
+  height: 100vh;
+}

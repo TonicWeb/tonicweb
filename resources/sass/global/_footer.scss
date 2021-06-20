@@ -1,0 +1,87 @@
+footer {
+    position: relative;
+    height: 260px;
+    display: flex;
+    width: 100%;
+    padding: 40px 40px;
+    margin-top: 250px;
+  
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+    li {padding-right: 20px;}
+    a {text-decoration: none;}
+    div {height: auto;}
+    h3 {font-size: 3.375em; margin-bottom: 100px;}
+    p, a {color: $colorWhite;}
+  
+    @media (max-width: 1340px) {
+      height: 310px;
+      h3 {font-size: 3.000em; margin-bottom: 50px;}
+    }
+    @media (max-width: 1050px) {height: 286px; padding: 30px 30px; margin-top: 50px;}
+    @media (max-width: 960px) {h3 {font-size: 2.500em; margin-bottom: 90px;}}
+    @media (max-width: 680px) {
+      flex-direction: column;
+      height: 440px;
+      margin-top: 30px;
+      ul {align-items: flex-start;}
+    }
+  }
+  
+  .footer-services {margin-top: 0;}
+  
+  .footer-left{
+    width: 45%;
+    @media (max-width: 1340px) {width: 48%;}
+    @media (max-width: 1050px) {width: 40%;}
+    @media (max-width: 680px) {width: 80%;}
+  }
+  
+  .footer-text {
+    position: absolute;
+    bottom: 44px;
+    @media (max-width: 680px) {bottom: 30px;}
+  }
+  
+  .footer-contact {
+    display: flex;
+    ul {
+      position: absolute;
+      margin-left: 240px;
+      bottom: 44px;
+      @media (max-width: 1340px) {margin-left: 0px;}
+      @media (max-width: 680px) {
+        flex-direction: column;
+        bottom: initial;
+        margin-top: 110px;
+      }
+    }
+  }
+  
+  .footer-details {
+    width: 50%;
+    margin-top: 16px;
+    @media (max-width: 1340px) {margin-top: 10px;}
+    @media (max-width: 1050px) {margin-top: 8px;}
+    @media (max-width: 680px) {margin-top: 28px;}
+  }
+  
+  .footer-p {
+    margin: 0;
+    margin-bottom: 8px;
+    @media (max-width: 680px) {margin-bottom: 4px;}
+  }
+  
+  .footer-address {
+    @media (max-width: 1340px) {bottom: 100px;}
+    @media (max-width: 680px) {bottom: initial; margin-top: 20px;}
+  }
+  
+  .contact-footer {
+    a {&:hover {color: $color1;}}
+  }
+  

@@ -1,0 +1,52 @@
+.contact-form {
+  width: 100%;
+  margin-bottom: 0;
+  p {margin-bottom: 60px;}
+
+  @media (max-width: 1540px) {p {margin-bottom: 50px;}}
+  @media (max-width: 1240px) {
+    margin-bottom: 90px;
+    p {margin-bottom: 40px;}
+  }
+  @media (max-width: 480px) {margin-bottom: 50px;}
+}
+
+.contactForm a {
+  margin-top: 20px;
+  @media (max-width: 480px) {margin-top: 30px;}
+}
+
+.form-group {
+  margin-bottom: 40px;
+
+  input, textarea {
+    width: 100%;
+    padding-left: 0;
+    
+    font-size: 1.125em;
+    color: $colorWhite;
+  }
+
+  ::placeholder {color: $colorWhite;}
+
+  textarea {height: 100px; resize: none;}
+
+  @media (max-width: 1240px) {margin-bottom: 30px; textarea {height: 100px; resize: none; margin-top: 6px;}}
+  @media (max-width: 1040px) {input, textarea {font-size: 1em;}}
+  @media (max-width: 680px) {margin-bottom: 22px; textarea {height: 80px; margin-top: 5px;}}
+  @media (max-width: 480px) {input, textarea {font-size: 0.9em;}}
+}
+
+.form-control {
+  width: 100%;
+  height: 40px;
+  color: $colorWhite;
+  background-color: $color4;
+  border-radius: 0;
+  border-color: $colorWhite;
+  border-width: 0 0 1px 0;
+  border-style: none none solid none;
+  box-shadow: none;
+
+  &:focus {outline: 0;box-shadow: none;border-color: $color1;}
+}
