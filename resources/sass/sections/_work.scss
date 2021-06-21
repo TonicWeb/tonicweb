@@ -11,7 +11,7 @@
     @media (max-width: 680px) {}
     @media (max-width: 480px) {
         margin-top: 80px;
-        margin-bottom: 190px;
+        margin-bottom: 60px;
     }
     .grid-container {
         margin: 0 auto;
@@ -76,8 +76,11 @@
                     transform-style: preserve-3d;
                     cursor: url("/img/common/cursor-icon.svg"),auto;
                     max-width: 75%;
-                    &.card1 {
+                    &.card1:first-child {
                         margin: 10px 0 0 35px;
+                    }
+                    &.card1 {
+                        margin: 40px 0 0 35px;
                     }
                     &.card2 {
                         margin: 40px 0 0 35px;

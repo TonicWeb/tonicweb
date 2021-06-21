@@ -6,7 +6,7 @@
     transform-style: preserve-3d;
     //transition: all .18s ease;
     cursor: url('/img/common/cursor-icon.svg'), auto;
-    width: 31.334%;
+    //width: 31.334%;
     display: flex;
     justify-content: space-between;
     &:hover {
@@ -58,5 +58,12 @@
         height: 1px;
         background-color: #fff;
         width: 100%;
+    }
+    @media (max-width: 1240px) {}
+    @media (max-width: 680px) {}
+    @media (max-width: 480px) {
+      .card-1 {
+          margin-top: 50px;
+      }
     }
 }

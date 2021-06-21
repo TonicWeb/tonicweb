@@ -1,7 +1,8 @@
 <footer class="footer footer-services" data-color="pink">
+    <h4>tonic</h4>
     <div class="footer-left">
         <p class="footer-text">&#169; Tonic The Agency 2020.</p>
-        <h4 class="text-purple">We're ready<br>to talk with <span>YOU.</span></h4>
+        <h4 class="text-pink">We're ready<br>to talk with <span>YOU.</span></h4>
     </div>
 
     <div class="footer-details">
